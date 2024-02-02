@@ -21,3 +21,34 @@ Graphpack lets you create GraphQL servers with zero configuration. It uses webpa
 		"dev": "graphpack",
 		"build": "graphpack build"
 	}
+
+3) création des 2 fichiers principaux => resolvers et Schema
+
+créer un dossier src  
+resolvers => liaison entre base de données et notre serveur GraphQL
+schema.graphql => Language sdl qui va avec graphqQL (schema definition langage)
+plein de type schema 
+
+les types
+
+#type => qui permet de créer des types d'objets => Name et {propriétés}
+Query est un type particulier car permet de gérer toutes les req
+
+ex création de la req hello qui renvoit un string
+
+type Query {
+  hello : string
+}
+
+string = type de réponse
+string gérée dans resolver par la suite
+
+gestion des req dans resolvers
+
+créer un objet resolvers qui contient des propriétés dont query pour lier l'objet query de schema avec
+graphql
+
+mettre en propriétés toutes les req créér dans schema => c'est props seront des fonctions qui reverra 
+la réponse
+
+
