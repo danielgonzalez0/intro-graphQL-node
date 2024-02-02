@@ -1,0 +1,23 @@
+1) installer graphPack
+
+pnpm i graphpack --dev
+
+https://www.npmjs.com/package/graphpack
+
+Graphpack lets you create GraphQL servers with zero configuration. It uses webpack with nodemon and Apollo Server under the hood, so we get features like Live Reloading, GraphQL Playground, GraphQL Imports and many more right out of the box.
+
+📦 Zero-config out of the box
+🚦 Built-in Live reload
+🚨 Super-friendly error messages
+🎮 GraphQL Playground IDE
+⭐️ GraphQL imports in Schema Definition Language
+💖 TypeScript support
+🔥 Blazing fast bundle times
+⚡️ ES module imports and dynamic import()'s thanks to Babel
+
+2) installer script pour package.json
+
+"scripts": {
+		"dev": "graphpack",
+		"build": "graphpack build"
+	}
